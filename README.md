@@ -33,18 +33,16 @@
 
 ## Saga/Compensation
 ### 상점(상품) 생성
-![create-store](https://github.com/ppoox/cna-final-ops/assets/28284285/e4aab201-49e7-4196-9a8d-a7fe254e1ea7)
-
-### 상점(상품) 조회
-![select-store](https://github.com/ppoox/cna-final-ops/assets/28284285/53da430d-18f5-4d3b-82d1-d85c3b2fe63c)
+![create-store](https://github.com/ppoox/cna-final-ops/assets/28284285/f4730b52-de33-4ccf-a817-ad31b2f632d3)
 
 ### 주문 생성
-![create-order](https://github.com/ppoox/cna-final-ops/assets/28284285/f4a1d226-e549-48ba-9bc6-aeeb93014524)
+![create-order](https://github.com/ppoox/cna-final-ops/assets/28284285/ab521bf9-23d3-45b3-8709-11467cbd1684)
 
-### 주문 취소
-![order-canceled](https://github.com/ppoox/cna-final-ops/assets/28284285/893e8fd3-9c70-4f36-b438-ce6f097f5a17)
+### 주문 조회
+![cancel-order](https://github.com/ppoox/cna-final-ops/assets/28284285/cb4840c4-0aec-4077-823a-1abcd77ac8b8)
 
-
+### Consumer
+![consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/a1221ce2-d1ca-4074-9ad8-f8ecde58d778)
 
 ## Gateway
 ### Kiali
