@@ -41,7 +41,7 @@
 ### 주문 조회
 ![cancel-order](https://github.com/ppoox/cna-final-ops/assets/28284285/cb4840c4-0aec-4077-823a-1abcd77ac8b8)
 
-### Consumer
+### Consumer console
 ![consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/a1221ce2-d1ca-4074-9ad8-f8ecde58d778)
 
 
@@ -52,10 +52,19 @@
 
 
 ## CQRS
+### 상점(상품) 생성
 ![cqrs-create-store](https://github.com/ppoox/cna-final-ops/assets/28284285/bc74ead4-04ea-4326-85af-9973a1ae965a)
+
+### 주문 생성
 ![cqrs-create-order](https://github.com/ppoox/cna-final-ops/assets/28284285/fd8386f0-1c3f-4a42-8870-4447df7a41a3)
+
+### 상품명 변경
 ![cqrs-update-product-name](https://github.com/ppoox/cna-final-ops/assets/28284285/ce7a2576-857e-49f0-af4b-a902887ce531)
+
+### 주문 조회
 ![cqrs-select-order](https://github.com/ppoox/cna-final-ops/assets/28284285/81b5e59b-27f0-40ac-974c-06f5e90d70f1)
+
+### Consumer console
 ![cqrs-consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/e5a12b4c-8f19-4133-98dd-e5d6d86ac5aa)
 
 
@@ -76,6 +85,27 @@
 ## HPA
 ![delivery-hpa-before](https://github.com/ppoox/cna-final-ops/assets/28284285/402007ae-606f-4fdb-aa8d-389730a0e822)
 ![delivery-hpa-after](https://github.com/ppoox/cna-final-ops/assets/28284285/d1aeb621-d582-4ddd-8f94-fae46ab15378)
+
+
+## ConfigMap
+### ConfigMap 정보
+![cm-describe](https://github.com/ppoox/cna-final-ops/assets/28284285/948fbd82-531e-4463-9cbf-c7613276b4a3)
+
+### 상점(상품) 생성
+![cm-create-store](https://github.com/ppoox/cna-final-ops/assets/28284285/5cff8529-a932-4046-b67c-42fec1acda85)
+
+### 주문 생성
+![cm-create-order](https://github.com/ppoox/cna-final-ops/assets/28284285/0f48268d-f59c-402c-ad25-007e7b5735c5)
+
+### Consumer console
+![cm-consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/73eea82b-b00a-4620-aa2a-45e7f102257f)
+
+### Order Service application.yaml (Store도 동일)
+![cm-order-application-dev](https://github.com/ppoox/cna-final-ops/assets/28284285/4946d495-44f1-4db3-a8f3-ba58d7dceec9)
+
+### Order Service buildspec.yaml (Store도 동일)
+![cm-order-buildspec](https://github.com/ppoox/cna-final-ops/assets/28284285/2f3f7465-1522-4151-9399-18dc72c68c52)
+
 
 ## Liveness/ReadinessProbe
 ![readness-probe-1](https://github.com/ppoox/cna-final-ops/assets/28284285/bc64b4d3-e6de-4c20-a437-2d12500d15d3)
