@@ -35,3 +35,9 @@ spec:
             timeoutSeconds: 2
             periodSeconds: 5
             failureThreshold: 5
+          env:
+            - name: ORDERED_TOPIC
+              valueFrom:
+                configMapKeyRef:
+                   name: localfood-topic
+                   key: ORDERED_TOPIC
