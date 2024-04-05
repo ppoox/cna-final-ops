@@ -83,7 +83,6 @@
 
 
 ## HPA
-![delivery-hpa-before](https://github.com/ppoox/cna-final-ops/assets/28284285/402007ae-606f-4fdb-aa8d-389730a0e822)
 ![delivery-hpa-after](https://github.com/ppoox/cna-final-ops/assets/28284285/d1aeb621-d582-4ddd-8f94-fae46ab15378)
 
 
