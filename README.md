@@ -1,87 +1,26 @@
-# 
+# LocalFood
 
 ## Model
-www.msaez.io/#/storming/modelforops
+[네이버 지역명물](https://shopping.naver.com/fresh/localfood/home)
 
-## Before Running Services
-### Make sure there is a Kafka server running
-```
-cd kafka
-docker-compose up
-```
-- Check the Kafka messages:
-```
-cd kafka
-docker-compose exec -it kafka /bin/bash
-cd /bin
-./kafka-console-consumer --bootstrap-server localhost:9092 --topic
-```
-
-## Run the backend micro-services
-See the README.md files inside the each microservices directory:
-
-- oder
-- delivery
-- product
+## Service Scenario
+- 지역 명물 상점들의 상품들이 나열된다.
+- 고객이 상점에 들어가 상품을 주문한다.
+- 주문내역이 입점 상인한테 전달된다.
+- 상품 준비가 완료되면 택배사에 전달한다.
+- 고객은 상품을 받아본다.
 
 
-## Run API Gateway (Spring Gateway)
-```
-cd gateway
-mvn spring-boot:run
-```
-
-## Test by API
-- oder
-```
- http :8088/orders id="id" productName="productName" qty="qty" status="status" 
-```
-- delivery
-```
- http :8088/deliveries id="id" productName="productName" qty="qty" orderId="orderId" address="address" status="status" 
-```
-- product
-```
- http :8088/inventories id="id" productName="productName" stock="stock" 
-```
+## Scenario Requirements
+- 고객은 배송전에 주문을 취소할 수 있다.
+- 주문/배송 상태는 지속하여 반영된다.
+- 고객은 주문/배송 상태를 확인할 수 있다.
 
 
-## Run the frontend
-```
-cd frontend
-npm i
-npm run serve
-```
+## Development Requirements
+- 주문/결제는 동기, 이외에는 비동기로 호출한다.
+- 인기있는 상점에 트래픽 병목 현상 발생시 다른 상점은 주문이 가능해야한다.
+- 지역 명물 상점들은 빠르게 불러올 수 있어야한다.
 
-## Test by UI
-Open a browser to localhost:8088
 
-## Required Utilities
-
-- httpie (alternative for curl / POSTMAN) and network utils
-```
-sudo apt-get update
-sudo apt-get install net-tools
-sudo apt install iputils-ping
-pip install httpie
-```
-
-- kubernetes utilities (kubectl)
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-```
-
-- aws cli (aws)
-```
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-```
-
-- eksctl 
-```
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-sudo mv /tmp/eksctl /usr/local/bin
-```
 
