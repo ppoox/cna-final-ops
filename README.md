@@ -44,11 +44,19 @@
 ### Consumer
 ![consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/a1221ce2-d1ca-4074-9ad8-f8ecde58d778)
 
+
 ## Gateway
 ### Kiali
 ![kiali](https://github.com/ppoox/cna-final-ops/assets/28284285/eef9c8ea-be47-412c-a635-4ee53e19c390)
 ![kiali2](https://github.com/ppoox/cna-final-ops/assets/28284285/e78ff0b5-fa7d-4fb7-acd7-c560955391e6)
 
+
+## CQRS
+![cqrs-create-store](https://github.com/ppoox/cna-final-ops/assets/28284285/bc74ead4-04ea-4326-85af-9973a1ae965a)
+![cqrs-create-order](https://github.com/ppoox/cna-final-ops/assets/28284285/fd8386f0-1c3f-4a42-8870-4447df7a41a3)
+![cqrs-update-product-name](https://github.com/ppoox/cna-final-ops/assets/28284285/ce7a2576-857e-49f0-af4b-a902887ce531)
+![cqrs-select-order](https://github.com/ppoox/cna-final-ops/assets/28284285/81b5e59b-27f0-40ac-974c-06f5e90d70f1)
+![cqrs-consumer](https://github.com/ppoox/cna-final-ops/assets/28284285/e5a12b4c-8f19-4133-98dd-e5d6d86ac5aa)
 
 
 ## Cloud Deploy
